@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* SECION DEL HEADER */
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    transition: 0.6s;
+} 
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.logo {
+    position: relative;
+    max-width: 80px;
+    
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #000;
+    font-weight: 400;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 21px;
+} 
+
+/* REDES */
+
+
+
+/* DETALLES ADICIONALES DEL HEADER */
+ul {
+    display: flex;
+}
+
+li {
+    display: block;
+    transition: .5s;
+}
+
+ul:hover li {
+    filter: blur(5px);
+}
+
+ul li:hover {
+    filter: blur(0px);
+}
+
+
+/* SECION DEL CONTENEDOR */
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor .texto {
+    position: relative;
+    max-width: 600px;
+}
+
+.contenedor .texto h2 {
+    color: #000;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contenedor .texto h2 p {
+    font: 2em;
+}
+
+.contenedor .texto p {
+    color: #000;
+    font-size: 16px;
+}
+
+.contenedor .texto a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contenedor .texto a:hover {
+    background: #242424;
+}
+
+.contenedor .imagenes {
+    height:  600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+    animation: contenedorimagenes 6s infinite;
+}
+
+@keyframes contenedorimagenes {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+/* SECCION INFORMACION  */
+
+
+.informacion {
+    /* Aplicar estilos a los elementos de la clase 'informacion' */
+    background: #fff;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    display: flex; 
+    flex-wrap: wrap; 
+} 
+
+.separador {
+    color: #ccc;
+    
+}
+
+/* Aplicar estilos a los elementos de la clase 'informacion' */
+.informacion {
+    display: flex; /* Utilizar flexbox para crear un contenedor flexible */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si no caben en una sola fila */
+  }
+  
+  /* Estilo para cada uno de los elementos de clase 'informacion-demas' */
+.informacion-demas {
+     
+    padding: 10px; /* Agregar espaciado entre los elementos */
+    text-align: center; /* Centrar el contenido del elemento */
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+  }
+  
+  
+.info {
+    display: block; /* Asegurar que la imagen sea un elemento de bloque */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+  }
+
+.info {
+    width: 200px;
+    margin: 10px;
+    
+}
+
+.texto-a {
+    text-decoration: none;
+    text-align: center;
+    color: #1a1a11;
+    font-size: 20px;
+}
+
+.texto-a:hover {
+    color: #FFD166;
+} 
+
+/* SECCION ONSTAR */
+/*
+.onstar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    transition: 0.6s;
+}
+
+.onstar .foto-onstar img {
+    
+    position: relative;
+    max-width: 600px;
+    
+    color: #000;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font: 2em;
+}
+
+.on {
+    width: 900px;
+    
+}
+
+.onstar .descripcion {
+    
+    
+} */
+
+.onstar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    background-color: #fff; /* Color de fondo opcional */
+}
+
+.foto-onstar {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en una fila horizontal */
+    align-items: center; /* Centra verticalmente los elementos */
+    max-width: 1920px; /* Ajusta el ancho máximo para 1920px */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.foto-onstar {
+    flex: 1; /* Ocupa el espacio necesario */
+    padding-right: 20px;
+}
+
+.foto-onstar img {
+    max-width: 100%;
+    height: 700px;
+    display: block;
+}
+
+.descripcion {
+    flex: 1; /* Ocupa el espacio necesario */
+}
+
+.descripcion h2 {
+    font-size: 51.75px;
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.descripcion p {
+    font-size: 20.7px;
+}
+
+.onstar .descripcion a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: end;
+}
+
+.onstar .descripcion a:hover {
+    background: #242424;
+}
+
+    /* FOOTER */
+    .container{
+        max-width: 1170px;
+        margin:auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        list-style: none;
+    }
+    .footer{
+        background-color: #1a1a1a;
+        padding: 70px 0;
+    }
+    .footer-col{
+       width: 25%;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #FFD166;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #ffffff;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+    }
+    
+    /*responsive*/
+    @media(max-width: 767px){
+      .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+    @media(max-width: 574px){
+      .footer-col{
+        width: 100%;
+    }
+    }
+
+    /* FLECHITA */
+    #botonArriba {
+        position: fixed;
+        bottom: 20px;
+        right: -100px;
+        width: 40px;
+    }
+    
